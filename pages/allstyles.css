@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: darkred;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.6rem ;
+    color: white;
+    font-size: 15px;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+header a {
+    
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.bottom-bar {
+    background-color: darkred;
+    bottom: 0; 
+    position: fixed;
+    width: 100%;   
+    /* margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0.3rem;
+    color: white;
+}
+
+.icon {
+    font-size: 1.5em;
+    padding: .5em;
+    margin-top: 0;
+    transition: .5s ease-in-out;
+    border-radius: 100%;
+    text-align: center;
+    border: 7px solid #eee;
+    color: white;
+}
+
+.bottom-bar a {
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.active {
+    transform: scale(1.25) translateY(-1em);
+    /* background: linear-gradient(135deg, #06283d,#06283d); */
+    border: 7px solid #eee;
+    background-color: darkred;
+    color: rgb(4, 212, 253);
+}
+
+.gallerys {
+    width: 90%;
+    margin: 30px;
+    margin-left: 9rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 6rem;
+    
+}
+.gallery {
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    object-fit: cover;
+    overflow: hidden;
+    /* border: 1px solid #27b7ff;
+    box-shadow: 0 0 2px 2px #272bff6a; */
+     
+}
+.gallery:hover {
+    transform: scale(1.1);
+    transition: .10s;
+    /* border: 2px solid #6703fd;
+    box-shadow: 0 0 2px 2px #e1bcfb6a; */
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width:600px) {
+
+    header{
+        position: fixed;
+        top:0;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 15px;
+    }
+    
+    .gallerys {
+        /* border: 2px solid red; */
+        width: 100%;
+        padding-top: 5rem;
+        margin-left: 0;
+        display: flex;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    /* .gallery img {
+        width: 100%;
+    } */
+
+    .gallery {
+        /* border: 1px solid blue; */
+        padding: 0;
+        width: 30%;
+    }
+
+    .icon {
+        font-size: 1em;
+        padding: .3em;
+        border: 4px solid #eee;
+    }
+}
+
+
+
+ 
