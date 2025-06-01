@@ -16,6 +16,7 @@ header {
     position: fixed;
     top:0;
     width: 100%;
+    z-index: 9999;
 }
 
 header a {
@@ -80,7 +81,8 @@ header a {
     
 }
 .gallery {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border: none;
     border-radius: 10px;
     width: 30%;
@@ -92,7 +94,7 @@ header a {
 }
 .gallery:hover {
     transform: scale(1.1);
-    transition: .10s;
+    transition: .40s;
     /* border: 2px solid #6703fd;
     box-shadow: 0 0 2px 2px #e1bcfb6a; */
 }

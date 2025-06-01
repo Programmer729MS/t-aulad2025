@@ -16,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
  
@@ -442,16 +443,16 @@ span {
 
             <div class="flex-1">
                 <h4>DEVELOPED BY</h4>
-                <h2>Muhammad Salisu Hassan</h2>
+                <h2>engr. m's programmer</h2>
                 <div class="animated-text">
                     I'm a <span></span>
                 </div>
                 <h4>Contact</h4>
                 <div class="links">
-                    <a href="tel:08130350584"><img src="../image/icon (6).jpg" alt=""></a>
-                    <a href="https://wa.link/8zfka7"><img src="../image/icon (3).jpg" alt=""></a>
-                    <a href="//https://www.facebook.com/muhammadsalisu.hassan.729//"><img src="../image/icon (1).jpg" alt=""></a>
-                    <a href="#"><img src="../image/icon (2).jpg" alt=""> </a>
+                    <a href="tel:08130350584"><img src="./images/icon (6).jpg" alt=""></a>
+                    <a href="https://wa.link/8zfka7"><img src="./images/icon (3).jpg" alt=""></a>
+                    <a href="//https://www.facebook.com/muhammadsalisu.hassan.729//"><img src="./images/icon (1).jpg" alt=""></a>
+                    <a href="#"><img src="./images/icon (4).jpg" alt=""> </a>
                     <a href=""></a>
                 </div>
             </div>
@@ -459,7 +460,7 @@ span {
     </div>
   
     <div class="bottom-bar">
-        <a href="./index.html"><ion-icon name="home-outline" class="icon" onclick="change(this)"></ion-icon></a>
+        <a href="../index.html"><ion-icon name="home-outline" class="icon" onclick="change(this)"></ion-icon></a>
         <a href="./teachers.html"><ion-icon name="person-outline" class="icon" onclick="change(this)"></ion-icon></a>
         <a href="./gallery.html"><ion-icon name="image-outline" class="icon" onclick="change(this)"></ion-icon></a>
         <a href="./about.html"><ion-icon name="list-outline" class="icon active" onclick="change(this)"></ion-icon></a>
@@ -472,7 +473,8 @@ span {
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-               
+             //animation
+             AOS.init();  
 
         // Bottom Navigation Bar
 
@@ -485,18 +487,20 @@ span {
             item.classList.add("active");
         }
 
-            // // aos animation
-            AOS.init();
+           
 
             //   slider script
-            var counter = 1;
-                setInterval(function(){
-                    document.getElementById('radio' + counter).checked = true;
-                    counter++;
-                    if(counter > 4){
-                        counter = 1;
-                    }
-            }, 5000);
+            // var counter = 1;
+            //     setInterval(function(){
+            //         document.getElementById('radio' + counter).checked = true;
+            //         counter++;
+            //         if(counter > 4){
+            //             counter = 1;
+            //         }
+            // }, 5000);
+
+             
+          
     </script>
 
 </body>
